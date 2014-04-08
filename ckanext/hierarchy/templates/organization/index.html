@@ -4,5 +4,8 @@
      'javascript module' -->
 {% block scripts %}
   {{ super() }}
+
+  {% block page_pagination %}
+  {% endblock %}
   {% resource 'jstree/jquery.jstree.js' %}
 {% endblock %}
